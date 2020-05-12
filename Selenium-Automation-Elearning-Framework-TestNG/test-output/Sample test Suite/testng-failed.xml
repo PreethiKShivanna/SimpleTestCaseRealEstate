@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Sample test Suite]">
+  <test name="Sample test(failed)">
+    <classes>
+      <class name="com.training.sanity.tests.RealEstate_Login_DeleteCategory_AdminAddTag">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="AddTagDashBoard"/>
+          <include name="setUpBeforeClass"/>
+        </methods>
+      </class> <!-- com.training.sanity.tests.RealEstate_Login_DeleteCategory_AdminAddTag -->
+    </classes>
+  </test> <!-- Sample test(failed) -->
+</suite> <!-- Failed suite [Sample test Suite] -->
