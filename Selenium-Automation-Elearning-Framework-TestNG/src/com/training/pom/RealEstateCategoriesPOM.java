@@ -15,6 +15,8 @@ public class RealEstateCategoriesPOM {
 	public RealEstateCategoriesPOM(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		
+	
 
 	}
 
@@ -51,7 +53,7 @@ public class RealEstateCategoriesPOM {
 	@FindBy(xpath = "//input[@id='submit']")
 	private WebElement AddNewCategoryBtn;
 
-	@FindBy(xpath = "//a[contains(text(),'SuryaCity')]")
+	@FindBy(xpath = "//a[contains(text(),'Brigade Apartments')]")
 	public WebElement AddedCategory;
 
 	public void CheckCategoryLabel() {

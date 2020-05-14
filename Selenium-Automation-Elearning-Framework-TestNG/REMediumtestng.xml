@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Real Estate">
+	<test name="Medium TestCases">
+		<classes>
+			<class
+				name="com.training.sanity.tests.RETC_040_MediumRealEstate_AddedPostDisplaysInBlogPage.java"/>
+			<class
+				name="com.training.sanity.tests.RETC_041_MediumRealEstate_CommentDisplaysInCommentsPage.java"/>
+			<class
+				name="com.training.sanity.tests.RETC_042_MediumRealEstate_AddedPostDisplaysInAllPostsPage.java"/>
+		</classes>
+	</test>
+</suite>	

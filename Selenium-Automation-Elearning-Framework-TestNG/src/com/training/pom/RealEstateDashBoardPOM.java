@@ -20,6 +20,9 @@ public class RealEstateDashBoardPOM {
 	@FindBy(xpath = "//div[contains(text(),'Posts')]")
 	public WebElement Posts;
 
+	@FindBy(xpath = "//div[contains(text(),'Comments')]")
+	public WebElement Comments;
+
 	@FindBy(xpath = "/html/body/div[1]/div[1]/div[2]/ul/li[3]/ul")
 	public WebElement SubMenuPosts;
 
@@ -47,6 +50,10 @@ public class RealEstateDashBoardPOM {
 	@FindBy(linkText = "Tags")
 	private WebElement Tags;
 
+	@FindBy(linkText = "Add New")
+	private WebElement AddNew;
+
+	
 	public String getHeading() {
 		return HeadingDashboard.getText();
 	}
@@ -55,8 +62,16 @@ public class RealEstateDashBoardPOM {
 		AllPosts.click();
 	}
 
+	public void clickonComments() {
+		Comments.click();
+	}
+
 	public void clickonAllPosts() {
 		Posts.click();
+	}
+	
+	public void clickonAddNew() {
+		AddNew.click();
 	}
 
 	public void ClikOnCategories() {

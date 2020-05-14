@@ -18,17 +18,16 @@ public class RealEstateAddNewPOM {
 
 	}
 
-		
 	@FindBy(xpath = "//h1[@class='wp-heading-inline']")
 	public WebElement AddNewPostHeading;
 
 	@FindBy(xpath = "//input[@id='title']")
 	public WebElement TitleTextBox;
 
-	@FindBy(xpath = "//textarea[@id='content']")
+	@FindBy(id = "tinymce")
 	public WebElement TextArea;
 
-	@FindBy(xpath = "//label[contains(text(),'DHFL Villa')]")
+	@FindBy(xpath = "//label[contains(text(),'Brigade Apartments')]")
 	private WebElement CategoryName;
 
 	@FindBy(xpath = "//input[@id='publish']")
@@ -36,7 +35,6 @@ public class RealEstateAddNewPOM {
 
 	@FindBy(xpath = "//a[contains(text(),'View post')]")
 	public WebElement ViewPostLink;
-
 
 	public void EnterPostTitle(String title) {
 		TitleTextBox.sendKeys(title);

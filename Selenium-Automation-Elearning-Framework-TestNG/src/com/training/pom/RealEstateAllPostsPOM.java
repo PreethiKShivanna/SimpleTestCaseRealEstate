@@ -23,9 +23,23 @@ public class RealEstateAllPostsPOM {
 
 	@FindBy(xpath = "//a[@class='page-title-action']")
 	public WebElement AddNewBtn;
+	
+	@FindBy(xpath = "//a[contains(text(),'Prestige Builders')]")
+	public WebElement AddedPost;
+	
+	@FindBy(xpath = "//input[@id='title']")
+	public WebElement EditPost;
+	
+	
+	
 
 	public void ClickOnAddNewBtn() {
 		AddNewBtn.click();
 	}
 
+	
+
+	public void ClickOnAddedPost() {
+		AddedPost.click();
+	}
 }

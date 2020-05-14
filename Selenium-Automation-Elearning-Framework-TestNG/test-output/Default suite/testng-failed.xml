@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.training.sanity.tests.MediumRealEstate_AddedPost_BlogSection">
+      <class name="com.training.sanity.tests.RETC_040_MediumRealEstate_AddedPostDisplaysInBlogPage">
         <methods>
-          <include name="setUpBeforeClass"/>
           <include name="setUp"/>
-          <include name="AllPosts"/>
+          <include name="VerifyAddedPostUnderBlog"/>
+          <include name="tearDown"/>
+          <include name="setUpBeforeClass"/>
         </methods>
-      </class> <!-- com.training.sanity.tests.MediumRealEstate_AddedPost_BlogSection -->
+      </class> <!-- com.training.sanity.tests.RETC_040_MediumRealEstate_AddedPostDisplaysInBlogPage -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

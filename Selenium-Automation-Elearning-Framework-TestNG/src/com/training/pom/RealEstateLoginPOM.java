@@ -27,9 +27,27 @@ public class RealEstateLoginPOM {
 
 	@FindBy(xpath = "//a[contains(text(),'Lost Your Password?')]")
 	private WebElement ForgotPassword;
-	
-	@FindBy(xpath="/html[1]/body[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/h3[1]/a[1]")
+
+	@FindBy(xpath = "//div[@class='post-content']//h3[contains(text(),'Brigade Flats')]")
 	public WebElement AddedPost;
+
+	@FindBy(xpath = "//li[@id='menu-item-617']//a[contains(text(),'Blog')]")
+	public WebElement Blog;
+
+	@FindBy(xpath = "(//*[contains(text(),'Read More')])[1]")
+	public WebElement ReadMoreLink;
+
+	@FindBy(xpath = "//textarea[@id='comment']")
+	public WebElement Commentbox;
+
+	@FindBy(id = "author")
+	public WebElement Name;
+
+	@FindBy(id = "email")
+	public WebElement email;
+
+	@FindBy(xpath = "//input[@id='submit']")
+	public WebElement PostCommentBtn;
 
 	public void clickonLoginRegisterLink() {
 		LogInRegisterLink.click();
@@ -48,5 +66,29 @@ public class RealEstateLoginPOM {
 
 	public void ClickSignInBtn() {
 		SignInBtn.click();
+	}
+
+	public void ClickBlogTab() {
+		Blog.click();
+	}
+
+	public void ClickOnReadMoreLink() {
+		ReadMoreLink.click();
+	}
+
+	public void EnterInComments(String sComments) {
+		Commentbox.sendKeys(sComments);
+	}
+
+	public void EnterInName(String sName) {
+		Name.sendKeys(sName);
+	}
+
+	public void EnterInemail(String semail) {
+		email.sendKeys(semail);
+	}
+
+	public void ClickonPostComment() {
+		PostCommentBtn.click();
 	}
 }
